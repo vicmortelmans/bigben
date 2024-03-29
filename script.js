@@ -26,6 +26,6 @@ function playSound(note) {
     oscillator.frequency.value = frequencies[note]; // Set frequency
     oscillator.connect(audioContext.destination);
     oscillator.start();
-    oscillator.stop(audioContext.currentTime + 1); // Play note for 1 second
+    oscillator.stop(audioContext.currentTime + 0.5); // Play note for 1 second
 }
 
